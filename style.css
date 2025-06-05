@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.5px var(--secondary200) solid;
+  gap: 10px;
+  border-bottom: 0.5px var(--secondary-200) solid;
 }
 
 #header .first-block {
@@ -33,6 +34,17 @@
   justify-content: space-between;
 }
 
+#header .second-block span {
+  cursor: pointer;
+}
+
+#header .second-block span:hover,
+#header .second-block span:active{
+  background: var(--gradient);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .header-button {
   background: var(--gradient);
   padding: 16px 24px;
@@ -41,15 +53,20 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .menu {
   display: none;
 }
 
+.menu-content {
+  display: none;
+}
+
 .frame {
   border-radius: 5px;
-  border: 1px var(--primary300) solid;
+  border: 1px var(--primary-300) solid;
   width: 24px;
   height: 24px;
 }
@@ -82,7 +99,7 @@
 #first-section > .text > .form {
   height: 68px;
   max-width: 434px;
-  background-color: var(--accent100);
+  background-color: var(--accent-100);
   border-radius: 8px;
   padding: 6px 6px 6px 24px;
   display: flex;
@@ -93,7 +110,7 @@
 input {
   border: none;
   outline: none;
-  background-color: var(--accent100);
+  background-color: var(--accent-100);
   padding: 0;
 }
 
@@ -101,7 +118,7 @@ input {
   font-size: 16px;
   line-height: 150%;
   margin: 0;
-  color: var(--primary300);
+  color: var(--primary-300);
   font-family: var(--font);
 }
 
@@ -188,7 +205,7 @@ input {
 
 .block {
   border-radius: 12px;
-  border: 0.5px var(--secondary200) solid;
+  border: 0.5px var(--secondary-200) solid;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -196,7 +213,7 @@ input {
 }
 
 .block > .wrapper {
-  border: 1px var(--secondary200) solid;
+  border: 1px var(--secondary-200) solid;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -224,13 +241,13 @@ input {
   gap: 40px;
 }
 
-#pricing > * > .h2 > span {
+#pricing > div > .h2 > span {
   background: var(--gradient);
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-#pricing > * > p {
+#pricing > div > p {
   max-width: 426px;
 }
 
@@ -244,6 +261,7 @@ input {
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .options > .images > img:last-child {
@@ -260,6 +278,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .proposes {
@@ -273,7 +292,7 @@ input {
   flex-basis: 100%;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px var(--secondary200) solid;
+  border: 2px var(--secondary-200) solid;
   gap: 32px;
 }
 
@@ -307,14 +326,15 @@ li::marker {
 }
 
 .clicker {
-  padding: 16px 0;
+  padding: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: 2px var(--secondary200) solid;
+  border: 2px var(--secondary-200) solid;
   border-radius: 8px;
   width: 100%;
+  cursor: pointer;
 }
 
 .propose:nth-child(2) .clicker {
@@ -326,11 +346,11 @@ li::marker {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  border: 1px var(--secondary200) solid;
+  border: 1px var(--secondary-200) solid;
 }
 
 .propose:nth-child(2) .clicker > div {
-  border: 1px var(--primary300) solid;
+  border: 1px var(--primary-300) solid;
 }
 
 .clicker-block {
@@ -370,15 +390,22 @@ li::marker {
 
 .texts > .text {
   padding: 16px 30px;
-  border: 1px var(--secondary200) solid;
+  border: 1px var(--secondary-200) solid;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   gap: 26px;
+  cursor: pointer;
+}
+
+.texts > .text:hover,
+.texts > text:active {
+  background-color: var(--accent-100);
+  color: var(--primary-400)
 }
 
 .texts > .text:nth-child(2) {
-  background-color: var(--accent100);
+  background-color: var(--accent-100);
 }
 
 .texts > .text:nth-child(2) > div > h6 {
@@ -386,7 +413,7 @@ li::marker {
 }
 
 .texts > .text > div:last-child {
-  border: 1px var(--secondary200) solid;
+  border: 1px var(--secondary-200) solid;
   border-radius: 8px;
   height: 32px;
   width: 32px;
@@ -409,8 +436,7 @@ li::marker {
 }
 
 .sign-up-propose > .first-block {
-  max-width: 497.82px;
-  height: 353px;
+  max-width: 498px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -431,13 +457,14 @@ li::marker {
   background: var(--gradient);
   width: 266px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .sign-up-propose > .first-block > .sign-up-button > .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px var(--primary400) solid;
+  border: 1px var(--primary-400) solid;
   border-radius: 8px;
 }
 
@@ -454,7 +481,7 @@ li::marker {
 
 #footer {
   padding-top: 80px;
-  border-top: 0.5px var(--secondary200) solid;
+  border-top: 0.5px var(--secondary-200) solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -473,6 +500,7 @@ li::marker {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  gap: 8px;
 }
 
 #footer .first-block > .info {
@@ -505,27 +533,36 @@ li::marker {
 #footer > .first-block > .info > .form {
   height: 48px;
   width: 290px;
-  background-color: var(--accent100);
+  background-color: var(--accent-100);
   border-radius: 8px;
   padding: 8px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 #footer > .first-block > .info > .form > .wrapper {
   border-radius: 8px;
-  border: 1px var(--secondary200) solid;
+  border: 1px var(--secondary-200) solid;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #footer > .first-block > .columns > .column > * > p {
-  color: var(--primary100);
+  color: var(--primary-100);
   font-size: 16px;
   line-height: 150%;
   margin: 0 0 16px 0;
+  cursor: pointer;
+}
+
+#footer > .first-block > .columns > .column > * > p:hover,
+#footer > .first-block > .columns > .column > * > p:active {
+  background: var(--gradient);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 #footer > .first-block > .columns > .column > * > p:last-child {
@@ -537,6 +574,7 @@ li::marker {
   line-height: 150%;
   margin: 0 0 14px 0;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #footer > .first-block > .columns > .column > * > p > span {
@@ -546,7 +584,7 @@ li::marker {
 }
 
 #footer > .second-block {
-  background-color: var(--secondary200);
+  background-color: var(--secondary-200);
   padding: 8px 160px 8px 144px;
   width: 100%;
   display: flex;
@@ -555,11 +593,12 @@ li::marker {
 }
 
 #footer > .second-block > span {
-  color: var(--primary400);
+  color: var(--primary-400);
 }
 
-#footer > .second-block > span > a {
-  color: var(--primary400);
+#footer > .second-block > span > address > a {
+  font-style: normal;
+  color: var(--primary-400);
 }
 
 #footer > .second-block > .social-networks {
@@ -572,8 +611,9 @@ li::marker {
   width: 41.35px;
   height: 40px;
   border-radius: 58px;
-  background-color: var(--secondary300);
+  background-color: var(--secondary-300);
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }

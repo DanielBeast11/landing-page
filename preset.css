@@ -3,19 +3,19 @@
 }
 
 :root {
-  --primary400: #080808;
-  --primary300: #333333;
-  --primary200: #737373;
-  --primary100: #bababa;
-  --secondary100: #aad9d1;
-  --secondary200: #048c80;
-  --secondary300: #017373;
-  --accent100: #efece6;
+  --primary-400: #080808;
+  --primary-300: #333333;
+  --primary-200: #737373;
+  --primary-100: #bababa;
+  --secondary-100: #aad9d1;
+  --secondary-200: #048c80;
+  --secondary-300: #017373;
+  --accent-100: #efece6;
   --white: #f7f7f7;
   --gradient: linear-gradient(
     -141deg,
-    var(--secondary100),
-    var(--secondary300)
+    var(--secondary-100),
+    var(--secondary-300)
   );
   --font: DM Sans;
 }
@@ -24,28 +24,28 @@ body {
   font-family: var(--font);
   margin: 0;
   padding: 0;
-  background-color: var(--primary400);
-  color: var(--accent100);
+  background-color: var(--primary-400);
+  color: var(--accent-100);
 }
 
 .black {
-  color: var(--primary400);
+  color: var(--primary-400);
 }
 
-.secondary200 {
-  color: var(--secondary200);
+.secondary-200 {
+  color: var(--secondary-200);
 }
 
-.primary200 {
-  color: var(--primary200);
+.primary-200 {
+  color: var(--primary-200);
 }
 
-.primary100 {
-  color: var(--primary100);
+.primary-100 {
+  color: var(--primary-100);
 }
 
-.primary300 {
-  color: var(--primary300);
+.primary-300 {
+  color: var(--primary-300);
 }
 
 p {

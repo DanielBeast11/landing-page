@@ -15,7 +15,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 18px;
+    width: 32px;
+    background-image: url(/images/Menu.svg);
   }
+
+  .menu.show {
+    background-image: url(/images/X.svg);
+    height: 26px;
+    width: 25px;
+  }
+  .menu-content.show {
+    position: absolute;
+    top: 87px;
+    right: 0px;
+    padding: 48px 28px;
+    background-color: var(--primary-400);
+    height: 491px;
+    width: 375px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-content.show > ul {
+    list-style: none;
+  }
+
+  .menu-content.show > ul > li:nth-child(2n) {
+    height: 1px;
+    display: flex;
+  }
+
+  .menu-content.show > ul > li > a {
+    text-decoration: none;
+    color: var(--accent-100);
+  }
+
+  .menu-content.show > .social-networks {
+    padding: 10px 0;
+    display: flex;
+    gap: 18px;
+  }
+  
+  .menu-content.show > .social-networks > .social-network {
+    width: 40px;
+    height: 40px;
+    border-radius: 58px;
+    background-color: var(--secondary-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
   #header {
     padding: 24px 48px;
   }
