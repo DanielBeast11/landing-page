@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary400: #080808;
+  --primary300: #333333;
+  --primary200: #737373;
+  --primary100: #bababa;
+  --secondary100: #aad9d1;
+  --secondary200: #048c80;
+  --secondary300: #017373;
+  --accent100: #efece6;
+  --white: #f7f7f7;
+  --gradient: linear-gradient(
+    -141deg,
+    var(--secondary100),
+    var(--secondary300)
+  );
+  --font: DM Sans;
+}
+
+body {
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary400);
+  color: var(--accent100);
+}
+
+.black {
+  color: var(--primary400);
+}
+
+.secondary200 {
+  color: var(--secondary200);
+}
+
+.primary200 {
+  color: var(--primary200);
+}
+
+.primary100 {
+  color: var(--primary100);
+}
+
+.primary300 {
+  color: var(--primary300);
+}
+
+p {
+  margin: 0;
+}
+
+.h1 {
+  font-size: 59px;
+  line-height: 106%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: 40px;
+  line-height: 120%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 32px;
+  line-height: 130%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.h5 {
+  font-size: 24px;
+  line-height: 140%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.h6 {
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-lg {
+  font-size: 20px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.text-md {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.text-regular {
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.text-tiny {
+  font-size: 12px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-bottom16 {
+  margin-bottom: 16px;
+}
+
+.margin-bottom24 {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 375px) {
+  .m-h2 {
+    font-size: 30px;
+    line-height: 130%;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .h5 {
+    font-size: 20px;
+    line-height: 140%;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .h6 {
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .text-lg {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  .text-md {
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  .text-regular {
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .text-lg {
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+  }
+}
+
+#container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
